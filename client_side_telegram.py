@@ -39,7 +39,7 @@ def register():
             code, ok = QInputDialog.getText(register_panel, "active code", "Enter your active code")
             if ok:
                 result = RPC_Service.activation(username, code)
-                #TODO show proper message
+                
                 register_panel.hide()
     else:
         message_box = QMessageBox()
